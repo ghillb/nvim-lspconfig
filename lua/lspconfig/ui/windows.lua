@@ -69,6 +69,7 @@ function win_float.percentage_range_window(col_range, row_range, options)
 
   local win_opts = win_float.default_opts(options)
   win_opts.relative = 'editor'
+  win_opts.border = 'single'
 
   local height_percentage, row_start_percentage
   if type(row_range) == 'number' then
